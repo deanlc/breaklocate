@@ -8,6 +8,7 @@ var map = new mapboxgl.Map({
     bearing: -60, // bearing in degrees
 });
 
+
 $('img').attr('draggable', false);
 var searchbar = $('#searchbar');
 var search = $('#search');
