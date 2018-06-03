@@ -14,10 +14,11 @@
     
     position:relative;
     font-family: 'Montserrat', sans-serif;
-}
+} .hide {display:none;}
+.circle-large {display:none;} .circle-small{display:none;}
 
 #search {
-    background-color: rgba(4, 31, 56, 0.51);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     
@@ -27,15 +28,15 @@
     
     position:absolute;
     z-index: 10;
-}
+} 
 
 #information {
     display: none;
-    background-color: rgba(4, 31, 56, 0.51);
-    width: 50%;
-    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 900px;
+    height: 480px;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 50px;
     
     color: white;
     text-align: center;
@@ -44,29 +45,122 @@
     position:absolute;
     z-index: 10;
     
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    
 }
 
 #infoText {
     font-size: 20pt;
+} #greenwich {
+    font-size: 40pt;
+    margin-top: -10px;
+}
+
+#logosText {
+    font-size: 20pt;
+    display: inline-block;
+}
+
+#line {
+    margin-top: 30px;
 }
 
 #question {
     margin-top: 20%;
+} #logoOne {
+    width: 180px;
+} 
+.smallLogo {
+    margin-top: 10px;
+    width: 50px; 
+}
+#One {
+    margin-right: 75px;
+} #Two {
+    margin-top: -80px;
+    margin-right: 460px;
+} #Three {
+    margin-top: -120px;
+    margin-left: 216px;
+} #Four {
+    margin-top: -160px;
+    margin-left: 800px;
 }
 
-#searchbar {
-    background-color: rgba(0, 0, 0, 0.35);
-    text-align: center;
-    width: 300px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.56);
-  border: none;
-  font-size: 15pt;
-  color: #505a64;
-  padding-left: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+.opacity-low { background-color: rgba(0, 0, 0, 0.4); }
+        
+        #oneInfo { margin-top: 150px; margin-left: 0300px; }
+        #twoInfo {margin-top: 50px; margin-left: 100px; }
+        #threeInfo { margin-top: 200px; margin-left: 150px; }
+        #fourInfo { margin-top: 10px; margin-left: 500px; }
+        
+        .circle-large {
+            z-index: 1;
+            width: 750px;
+            height: 750px;
+            border-radius: 50%;
+            position: absolute;
+            margin-left: 1050px;
+            margin-top: 100px;
+            
+            border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+        }
+        
+        .circle-small {
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: greenyellow;
+            position: relative;
+            border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+        }
+        
+        .informationHotel {
+            width: 900px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position:absolute;
+            z-index: 11;
+            margin-left: 5%;
+            margin-top: 550px;
+            color: white;
+            text-align:center;
+            font-size: 10pt;
+            display: none;
+            border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+} .informationHotel p {
+    font-size: 20px;
+} .informationHotel h1 {
+    font-style: normal;
+} #viewButton {
+    position:absolute;
+    z-index: 10;
+    margin-left: 798px;
+    margin-top: 870px;
+    height: 50px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: white;
+    display: none;
 }
+        
+        .informationHotel h2 { margin: 10px; }
+        .informationHotel img { width: 222px; height: 140px; }
+        
 
 /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 
@@ -81,20 +175,20 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #ffffff;
     font-size: 1em;
     line-height: 1.4;
     
     height: 100%;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     height: 100%;
     width: 100%;
     
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*
@@ -369,4 +463,34 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#searchbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: 'Roboto';
+    height: 47px;
+    width: 300px;
+    border: none;
+    font-size: 20px;
+    color: whitesmoke;
+    position: absolute;
+    z-index: 10;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    margin-left: -875px;
+    margin-top: 345px;
+} 
+
+
+::placeholder {
+    color:white;
 }

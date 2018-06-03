@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Stuff</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {background-color: beige; }
+        .opacity-low { background-color: rgba(187, 187, 187, 0.30); }
+        
+        #oneInfo { margin-top: 70px; margin-left: 300px; }
+        #twoInfo { margin-top: 30px; margin-left: 100px; }
+        #threeInfo { margin-top: 150px; margin-left: 150px; }
+        #fourInfo { margin-top: 10px; margin-left: 350px; }
+        
+        .circle-large {
+            z-index: 1;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 900px;
+        }
+        
+        .circle-small {
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+        }
+        
+        .informationHotel {
+            width: 900px;
+            height: 200px;
+            background-color: #bbb;
+            position: relative;
+            
+        }
+        
+        .informationHotel h2 { margin: 0; }
+        .informationHotel img { width: 222px; height: 140px; }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="circle-large opacity-low">
+        <div class="circle-small" id="oneInfo"></div>
+        <div class="circle-small" id="twoInfo"></div>
+        <div class="circle-small" id="threeInfo"></div>
+        <div class="circle-small" id="fourInfo"></div>
+    </div>
+    
+    <div class="informationHotel">
+        <h2>Stylish House Close to River Thames</h2>
+        <img src="img/first-inside.png">
+        <img src="img/first-outside.png">
+        <img src="img/first-bedroom.png">
+        <img src="img/first-view.png">
+    </div>
+
+    <div class="informationHotel">
+        <h2>Stay in a Charming Garden Flat</h2>
+        <img src="second-inside.png">
+        <img src="second-outside.png">
+        <img src="second-bedroom.png">
+        <img src="second-view.png">
+    </div>
+    
+    <div class="informationHotel">
+        <h2>Sleep in a Room in Central Apartment</h2>
+        <img src="third-inside.png">
+        <img src="third-outside.png">
+        <img src="third-bedroom.png">
+        <img src="third-view.png">
+    </div>
+
+    <div class="informationHotel">
+        <h2>Beautiful Clean Private Room</h2>
+        <img src="fourth-inside.png">
+        <img src="fourth-outside.png">
+        <img src="fourth-bedroom.png">
+        <img src="fourth-view.png">
+    </div>
+
+</body>
+</html>
