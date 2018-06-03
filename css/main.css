@@ -329,13 +329,11 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-/*
 .zoom {
-    zoom: 5;
-    -moz-transform: scale(5);
+    zoom: 4;
+    -moz-transform: scale(4);
     -moz-transform-origin: 0 0;
 }
-*/
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
